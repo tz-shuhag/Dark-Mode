@@ -16,17 +16,16 @@ Click the extension icon to activate or deactivate Dark Mode.
 It uses a custom stylesheet to invert background and text colors for better readability, while attempting to preserve media and image brightness.
 
 # 📦 Installation
-1. Download or clone the repo
-2. Go to chrome://extensions
-3. Enable Developer Mode
-4. Click Load unpacked
-5. Select the extension folder
+1. Download the Zip
+- [Extension ZIP File](https://github.com/tz-shuhag/Dark-Mode/archive/refs/heads/main.zip)
+3. Go to `chrome://extensions`
+4. Enable Developer Mode
+5. Click Load unpacked
+6. Select the extracted folder
 
 # 📢 Feedback & Support
 Found a bug? Want a new feature?
-Open an issue or suggest a fix on GitHub.
+Open an [ISSUE](https://github.com/tz-shuhag/Dark-Mode/issues/new/choose) or suggest a fix on GitHub.
 
 ## ☕ Credits
-Made with ❤️ by TZ Shuhag
-- GitHub ・ Website
-
+Made with ❤️ by ・ [TZ Shuhag](https://tz-shuhag.github.io)
