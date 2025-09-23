@@ -1,16 +1,22 @@
 function applyDarkMode() {
   const css = `
     html.dark-mode-on {
-      filter: invert(100%) hue-rotate(180deg);
-      background-color: #fcfcfc;
+      color: #c0c0c0 !important;
+      background-color: #2e2e2e !important;
+      color-scheme: dark;
     }
-    html.dark-mode-on img,
-    html.dark-mode-on video,
-    html.dark-mode-on picture,
-    html.dark-mode-on iframe,
-    html.dark-mode-on svg,
-    html.dark-mode-on [style*="background-image"] {
-      filter: invert(100%) hue-rotate(180deg);
+    html.dark-mode-on *:not(img):not(video):not(picture):not(iframe) {
+      color: #c0c0c0 !important;
+      background-color: #2e2e2e !important;
+      border-color: #c0c0c0 !important;
+    }
+    html.dark-mode-on a:visited {
+      color: #a4a4a4 !important;
+    }
+    html.dark-mode-on input:focus,
+    html.dark-mode-on textarea:focus,
+    html.dark-mode-on select:focus {
+      outline: 1px solid #a4a4a4 !important;
     }
   `;
   const style = document.createElement('style');
@@ -18,27 +24,6 @@ function applyDarkMode() {
   style.textContent = css;
   document.head.appendChild(style);
   document.documentElement.classList.add('dark-mode-on');
-
-  // MutationObserver to handle dynamically added images
-  const observer = new MutationObserver((mutations) => {
-    mutations.forEach((mutation) => {
-      if (mutation.addedNodes.length > 0) {
-        mutation.addedNodes.forEach((node) => {
-          if (node.nodeType === 1) { // Check if it's an element
-            const images = node.querySelectorAll('img');
-            images.forEach((img) => {
-              img.style.filter = 'invert(100%) hue-rotate(180deg)';
-            });
-          }
-        });
-      }
-    });
-  });
-
-  observer.observe(document.body, {
-    childList: true,
-    subtree: true,
-  });
 }
 
 function removeDarkMode() {
@@ -53,7 +38,7 @@ function getParentDomain(hostname) {
   return parts.slice(-2).join('.');
 }
 
-// Apply dark mode on page load if site is in enabledSites (check parent domain!)
+// Apply dark mode on page load if site is in enabledSites
 chrome.storage.sync.get("enabledSites", (data) => {
   const enabledSites = data.enabledSites || {};
   const hostname = window.location.hostname;
@@ -63,7 +48,7 @@ chrome.storage.sync.get("enabledSites", (data) => {
   }
 });
 
-// Listen for toggle messages from background script
+// Listen for toggle messages from the background script
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   if (message.action === "toggleDarkMode") {
     if (message.isEnabled) applyDarkMode();
