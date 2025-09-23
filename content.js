@@ -62,3 +62,12 @@ chrome.storage.sync.get("enabledSites", (data) => {
     applyDarkMode();
   }
 });
+
+// Listen for toggle messages from background script
+chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+  if (message.action === "toggleDarkMode") {
+    if (message.isEnabled) applyDarkMode();
+    else removeDarkMode();
+    sendResponse({ success: true });
+  }
+});
