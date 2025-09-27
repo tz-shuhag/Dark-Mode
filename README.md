@@ -4,7 +4,7 @@ A lightweight Chrome Extension to help you reduce eye strain and enjoy a more co
 
 ![Dark](https://raw.githubusercontent.com/tz-shuhag/tz-shuhag.github.io/refs/heads/main/assets/images/dark.webp)
 
-# ⚡ Features
+# 🕶️ Features
 - 🌓 Toggle Dark Mode on/off instantly
 - 💡 Works on all websites
 - 🎯 Simple & clean interface
