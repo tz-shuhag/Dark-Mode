@@ -1,6 +1,7 @@
 # 🌙 Dark Mode Toggle
-Easily enable or disable Dark Mode on any website with a single click!
-A lightweight Chrome Extension to help you reduce eye strain and enjoy a more comfortable browsing experience — day or night.
+> [!Note]
+> **Easily enable or disable Dark Mode on any website with a single click!
+A lightweight Chrome Extension to help you reduce eye strain and enjoy a more comfortable browsing experience — day or night.**
 
 [![Release](https://img.shields.io/github/v/release/tz-shuhag/Dark-Mode?display_name=tag&style=for-the-badge&logo=github&labelColor=21262d&color=1f6feb)](https://github.com/tz-shuhag/Dark-Mode/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/tz-shuhag/Dark-Mode/total?style=for-the-badge&labelColor=21262d&color=238636)](https://github.com/tz-shuhag/Dark-Mode/releases)
