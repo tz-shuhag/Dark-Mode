@@ -1,5 +1,5 @@
 # 🌙 Dark Mode Toggle
-> [!Note]
+
 > **Easily enable or disable Dark Mode on any website with a single click!
 A lightweight Chrome Extension to help you reduce eye strain and enjoy a more comfortable browsing experience — day or night.**
 
