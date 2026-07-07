@@ -7,7 +7,7 @@ A lightweight Chrome Extension to help you reduce eye strain and enjoy a more co
 [![Downloads](https://img.shields.io/github/downloads/tz-shuhag/Dark-Mode/total?style=for-the-badge&labelColor=21262d&color=238636)](https://github.com/tz-shuhag/Dark-Mode/releases)
 [![Platform](https://img.shields.io/badge/chrome-platform?style=for-the-badge&label=platform&labelColor=21262d&color=6e7681)](https://www.google.com/chrome/)
 
-![Dark](https://raw.githubusercontent.com/tz-shuhag/tz-shuhag.github.io/refs/heads/main/assets/images/dark.webp)
+![Dark](https://raw.githubusercontent.com/tz-shuhag/Dark-Mode/main/darkmode.webp)
 
 # 🕶️ Features
 - 🌓 Toggle Dark Mode on/off instantly
